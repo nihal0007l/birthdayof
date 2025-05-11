@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Honey!</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: black;
+            color: #00ff00;
+            padding: 20px;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        #message {
+            white-space: pre-wrap;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .blink {
+            animation: blink-animation 1s steps(5, start) infinite;
+        }
+
+        @keyframes blink-animation {
+            0% { color: #00ff00; }
+            50% { color: transparent; }
+            100% { color: #00ff00; }
+        }
+
+        .typewriter {
+            border-right: 3px solid #00ff00;
+            display: inline-block;
+            animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday, Honey!</h1>
+    <div id="message" class="typewriter">
+        I don’t know why I’m even doing this, but here it is—a special happy birthday from a stranger you’ve never met in person, yet someone who once felt a deep connection with you.  
+        <br><br>
+        I still don’t know why we stopped talking, but those memories... they were something special. I don’t usually message anyone first, but that day—20th October at 7:36 p.m.—was different. It meant something to me.  
+        <br><br>
+        When I got your reply, it honestly felt like a mini heart attack—in the best way possible.  
+        <br><br>
+        I’ve always felt unlucky in life. I don’t normally put in effort for anyone, nor do I try to. But for some reason, I did for you. I don’t even care much about others, yet with you, it was different.  
+        <br><br>
+        Maybe this is pointless, maybe not—but if somehow you recognize me through this message, that alone would mean a lot.  
+        <br><br>
+        Your favorite word, the one I still remember: "BAs".  
+        <br><br>
+        Happy Birthday to you! 🎂  
+        <br><br>
+        Enjoy your day to the fullest—with joy and happiness.  
+        <br><br>
+        And lastly...  
+        <br><br>
+        I wish we could talk again like we used to.  
+        <br><br>
+        I don’t know what misunderstanding created the distance between us, but if there’s a chance to clear it up, I’d be truly grateful.  
+        <br><br>
+        It might not mean much to you, but to me—it means a lot.  
+        <br><br>
+        Just have a beautiful day. You deserve it.
+    </div>
+    <script>
+        let message = document.getElementById("message");
+        setTimeout(() => {
+            message.classList.remove("typewriter");
+            message.classList.add("blink");
+        }, 5000); // Delay after typing animation ends
+    </script>
+</body>
+</html>
